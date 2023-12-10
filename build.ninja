@@ -1,0 +1,4 @@
+rule compile
+    command=clang++ ${in} -o ${out} --std=c++17
+
+build build/tarjan.exe: compile tarjan.cpp
